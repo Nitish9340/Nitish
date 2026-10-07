@@ -71,7 +71,8 @@ for k, s in enumerate(shots):
         f' tl.to("#w-{sid}", {{ scale: {round(z * 1.035, 3)}, duration: {push}, ease: "none" }}, {round(s["start"] + 0.22, 3)});')
 
 # ------------------------------------------------------------------ captions
-NO_CAPS = [(14.35, 16.74)]  # the FDE reveal spells the words out itself
+# Big kinetic headlines already spell these words out; the reference shows no small caption under them.
+NO_CAPS = [(9.70, 10.70), (14.35, 16.74), (24.36, 26.26), (29.24, 30.55), (32.45, 99.0)]
 cap_html, cap_js = [], []
 for k, c in enumerate(caps):
     if any(a <= c["start"] < b for a, b in NO_CAPS):
@@ -81,10 +82,17 @@ for k, c in enumerate(caps):
     for a, b in NO_CAPS:
         if c["start"] < a < end:
             end = a
-    dur = round(end - c["start"], 3)
-    cid = f"c{k:03d}"
-    cap_html.append(f'      <div id="{cid}" class="cap{' cap-seam' if layout_at(c['start'])[1] == 'split' else ''} clip" data-start="{c["start"]}" data-duration="{dur}" data-track-index="20"><span id="{cid}-t">{html.escape(c["text"])}</span></div>')
-    cap_js.append(f'tl.fromTo("#{cid}-t", {{ scale: 0.82 }}, {{ scale: 1, duration: 0.09, ease: "back.out(3)" }}, {c["start"]});')
+    # A word can outlive its shot: split it at every layout change so the caption moves with
+    # the cut (seam position on split screens, chest position on full frame) and never lands on the face.
+    edges = [c["start"]] + [t for t, _, _ in LAYOUT if c["start"] + 0.01 < t < end - 0.01] + [end]
+    for j, (a, b) in enumerate(zip(edges, edges[1:])):
+        if b - a < 0.07 and j > 0:
+            continue
+        cid = f"c{k:03d}" + ("" if j == 0 else f"-{j}")
+        seam = " cap-seam" if layout_at(a)[1] == "split" else ""
+        cap_html.append(f'      <div id="{cid}" class="cap{seam} clip" data-start="{round(a, 3)}" data-duration="{round(b - a, 3)}" data-track-index="20"><span id="{cid}-t">{html.escape(c["text"])}</span></div>')
+        if j == 0:
+            cap_js.append(f'tl.fromTo("#{cid}-t", {{ scale: 0.82 }}, {{ scale: 1, duration: 0.09, ease: "back.out(3)" }}, {c["start"]});')
 
 # ------------------------------------------------------------------ audio
 SFX = [  # (time, file, volume)
@@ -104,6 +112,8 @@ SFX = [  # (time, file, volume)
 ]
 SFX_LEN = {"whoosh": 0.55, "pop": 0.09, "scribble": 0.32, "impact": 1.4, "ding": 1.2, "click": 0.03}
 audio = [f'      <audio id="music" src="assets/audio/music.wav" data-start="0" data-duration="{DURATION}" data-track-index="30" data-volume="0.7"></audio>']
+SFX_TRIM_DB = {"impact": -12, "whoosh": -14, "pop": -16, "click": -16, "ding": -16, "scribble": -16}
+SFX = [(t, name, round(vol * 10 ** (SFX_TRIM_DB[name] / 20), 4)) for t, name, vol in SFX]
 lanes = []  # greedy lane packing so layered SFX never share a Studio lane
 for k, (t, name, vol) in enumerate(SFX):
     d = round(min(SFX_LEN[name], DURATION - t - 0.01), 3)
