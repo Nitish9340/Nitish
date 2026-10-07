@@ -2,3 +2,6 @@ node_modules/
 renders/
 *.tgz
 .DS_Store
+
+# Rendered reel kept out of the public repo until the owner opts in
+exports/fde-reel.mp4
