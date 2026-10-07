@@ -1,0 +1,627 @@
+[
+ {
+  "text": "The",
+  "start": 0.06,
+  "end": 0.21
+ },
+ {
+  "text": "hardest",
+  "start": 0.21,
+  "end": 0.57
+ },
+ {
+  "text": "job",
+  "start": 0.57,
+  "end": 0.81
+ },
+ {
+  "text": "in",
+  "start": 0.81,
+  "end": 0.93
+ },
+ {
+  "text": "tech",
+  "start": 0.93,
+  "end": 1.11
+ },
+ {
+  "text": "doesn't",
+  "start": 1.119,
+  "end": 1.47
+ },
+ {
+  "text": "even",
+  "start": 1.47,
+  "end": 1.68
+ },
+ {
+  "text": "have",
+  "start": 1.68,
+  "end": 1.86
+ },
+ {
+  "text": "a",
+  "start": 1.86,
+  "end": 1.92
+ },
+ {
+  "text": "normal",
+  "start": 1.92,
+  "end": 2.28
+ },
+ {
+  "text": "title.",
+  "start": 2.46,
+  "end": 2.58
+ },
+ {
+  "text": "Big",
+  "start": 2.74,
+  "end": 3.16
+ },
+ {
+  "text": "companies",
+  "start": 3.16,
+  "end": 3.67
+ },
+ {
+  "text": "are",
+  "start": 3.67,
+  "end": 3.79
+ },
+ {
+  "text": "hiring",
+  "start": 3.795,
+  "end": 4.12
+ },
+ {
+  "text": "for",
+  "start": 4.12,
+  "end": 4.273
+ },
+ {
+  "text": "it",
+  "start": 4.273,
+  "end": 4.42
+ },
+ {
+  "text": "right",
+  "start": 4.42,
+  "end": 4.63
+ },
+ {
+  "text": "now.",
+  "start": 4.63,
+  "end": 4.87
+ },
+ {
+  "text": "most",
+  "start": 5.03,
+  "end": 5.36
+ },
+ {
+  "text": "engineers",
+  "start": 5.36,
+  "end": 5.87
+ },
+ {
+  "text": "have",
+  "start": 5.87,
+  "end": 6.02
+ },
+ {
+  "text": "never",
+  "start": 6.02,
+  "end": 6.29
+ },
+ {
+  "text": "heard",
+  "start": 6.32,
+  "end": 6.53
+ },
+ {
+  "text": "of",
+  "start": 6.53,
+  "end": 6.65
+ },
+ {
+  "text": "it.",
+  "start": 6.65,
+  "end": 6.89
+ },
+ {
+  "text": "and",
+  "start": 7.05,
+  "end": 7.2
+ },
+ {
+  "text": "no,",
+  "start": 7.2,
+  "end": 7.38
+ },
+ {
+  "text": "it's",
+  "start": 7.41,
+  "end": 7.59
+ },
+ {
+  "text": "not",
+  "start": 7.59,
+  "end": 7.83
+ },
+ {
+  "text": "working",
+  "start": 7.83,
+  "end": 8.19
+ },
+ {
+  "text": "from",
+  "start": 8.19,
+  "end": 8.4
+ },
+ {
+  "text": "home.",
+  "start": 8.4,
+  "end": 8.64
+ },
+ {
+  "text": "it's",
+  "start": 8.76,
+  "end": 8.97
+ },
+ {
+  "text": "the",
+  "start": 8.97,
+  "end": 9.09
+ },
+ {
+  "text": "opposite.",
+  "start": 9.09,
+  "end": 9.6
+ },
+ {
+  "text": "imagine",
+  "start": 9.76,
+  "end": 10.18
+ },
+ {
+  "text": "an",
+  "start": 10.18,
+  "end": 10.303
+ },
+ {
+  "text": "army.",
+  "start": 10.303,
+  "end": 10.6
+ },
+ {
+  "text": "most",
+  "start": 10.76,
+  "end": 11.06
+ },
+ {
+  "text": "soldiers",
+  "start": 11.06,
+  "end": 11.54
+ },
+ {
+  "text": "stay at",
+  "start": 11.54,
+  "end": 11.96
+ },
+ {
+  "text": "the",
+  "start": 11.96,
+  "end": 12.05
+ },
+ {
+  "text": "main",
+  "start": 12.05,
+  "end": 12.29
+ },
+ {
+  "text": "base.",
+  "start": 12.29,
+  "end": 12.71
+ },
+ {
+  "text": "one",
+  "start": 12.87,
+  "end": 13.11
+ },
+ {
+  "text": "goes",
+  "start": 13.11,
+  "end": 13.32
+ },
+ {
+  "text": "right",
+  "start": 13.32,
+  "end": 13.56
+ },
+ {
+  "text": "to",
+  "start": 13.56,
+  "end": 13.65
+ },
+ {
+  "text": "the",
+  "start": 13.65,
+  "end": 13.74
+ },
+ {
+  "text": "front line.",
+  "start": 13.74,
+  "end": 14.25
+ },
+ {
+  "text": "That's",
+  "start": 14.41,
+  "end": 14.629
+ },
+ {
+  "text": "the",
+  "start": 14.659,
+  "end": 14.809
+ },
+ {
+  "text": "FDE.",
+  "start": 14.809,
+  "end": 15.349
+ },
+ {
+  "text": "Forward",
+  "start": 15.469,
+  "end": 15.859
+ },
+ {
+  "text": "Deployed",
+  "start": 15.859,
+  "end": 16.189
+ },
+ {
+  "text": "Engineer.",
+  "start": 16.189,
+  "end": 16.639
+ },
+ {
+  "text": "You",
+  "start": 16.799,
+  "end": 16.949
+ },
+ {
+  "text": "go",
+  "start": 16.949,
+  "end": 17.099
+ },
+ {
+  "text": "to",
+  "start": 17.099,
+  "end": 17.219
+ },
+ {
+  "text": "the",
+  "start": 17.219,
+  "end": 17.309
+ },
+ {
+  "text": "client's",
+  "start": 17.309,
+  "end": 17.699
+ },
+ {
+  "text": "office,",
+  "start": 17.699,
+  "end": 18.149
+ },
+ {
+  "text": "you",
+  "start": 18.419,
+  "end": 18.569
+ },
+ {
+  "text": "sit",
+  "start": 18.569,
+  "end": 18.809
+ },
+ {
+  "text": "with",
+  "start": 18.809,
+  "end": 18.959
+ },
+ {
+  "text": "their",
+  "start": 18.959,
+  "end": 19.109
+ },
+ {
+  "text": "team,",
+  "start": 19.109,
+  "end": 19.469
+ },
+ {
+  "text": "you",
+  "start": 19.629,
+  "end": 19.749
+ },
+ {
+  "text": "see",
+  "start": 19.749,
+  "end": 19.929
+ },
+ {
+  "text": "the",
+  "start": 19.929,
+  "end": 20.079
+ },
+ {
+  "text": "real",
+  "start": 20.092,
+  "end": 20.349
+ },
+ {
+  "text": "problem",
+  "start": 20.349,
+  "end": 20.769
+ },
+ {
+  "text": "and",
+  "start": 20.769,
+  "end": 20.919
+ },
+ {
+  "text": "you",
+  "start": 20.919,
+  "end": 21.009
+ },
+ {
+  "text": "fix",
+  "start": 21.009,
+  "end": 21.249
+ },
+ {
+  "text": "it",
+  "start": 21.249,
+  "end": 21.369
+ },
+ {
+  "text": "on",
+  "start": 21.369,
+  "end": 21.489
+ },
+ {
+  "text": "the",
+  "start": 21.489,
+  "end": 21.579
+ },
+ {
+  "text": "spot.",
+  "start": 21.579,
+  "end": 21.939
+ },
+ {
+  "text": "Engineers",
+  "start": 22.099,
+  "end": 22.579
+ },
+ {
+  "text": "who",
+  "start": 22.579,
+  "end": 22.699
+ },
+ {
+  "text": "stay",
+  "start": 22.699,
+  "end": 22.939
+ },
+ {
+  "text": "behind",
+  "start": 22.939,
+  "end": 23.389
+ },
+ {
+  "text": "build",
+  "start": 23.449,
+  "end": 23.77
+ },
+ {
+  "text": "the",
+  "start": 23.779,
+  "end": 23.809
+ },
+ {
+  "text": "product.",
+  "start": 23.809,
+  "end": 24.259
+ },
+ {
+  "text": "This",
+  "start": 24.419,
+  "end": 24.629
+ },
+ {
+  "text": "one",
+  "start": 24.629,
+  "end": 24.809
+ },
+ {
+  "text": "makes",
+  "start": 24.809,
+  "end": 25.049
+ },
+ {
+  "text": "it",
+  "start": 25.049,
+  "end": 25.169
+ },
+ {
+  "text": "work",
+  "start": 25.169,
+  "end": 25.439
+ },
+ {
+  "text": "in",
+  "start": 25.439,
+  "end": 25.499
+ },
+ {
+  "text": "the",
+  "start": 25.499,
+  "end": 25.589
+ },
+ {
+  "text": "real",
+  "start": 25.589,
+  "end": 25.829
+ },
+ {
+  "text": "world.",
+  "start": 25.829,
+  "end": 26.159
+ },
+ {
+  "text": "Postings",
+  "start": 26.319,
+  "end": 26.799
+ },
+ {
+  "text": "for",
+  "start": 26.799,
+  "end": 26.979
+ },
+ {
+  "text": "this",
+  "start": 26.979,
+  "end": 27.159
+ },
+ {
+  "text": "job",
+  "start": 27.159,
+  "end": 27.489
+ },
+ {
+  "text": "are",
+  "start": 27.549,
+  "end": 27.729
+ },
+ {
+  "text": "up",
+  "start": 27.729,
+  "end": 27.969
+ },
+ {
+  "text": "800%",
+  "start": 28.179,
+  "end": 29.139
+ },
+ {
+  "text": "Have",
+  "start": 29.299,
+  "end": 29.449
+ },
+ {
+  "text": "you",
+  "start": 29.449,
+  "end": 29.599
+ },
+ {
+  "text": "even",
+  "start": 29.599,
+  "end": 29.809
+ },
+ {
+  "text": "heard",
+  "start": 29.809,
+  "end": 30.019
+ },
+ {
+  "text": "of",
+  "start": 30.019,
+  "end": 30.139
+ },
+ {
+  "text": "it?",
+  "start": 30.139,
+  "end": 30.319
+ },
+ {
+  "text": "Comment",
+  "start": 30.589,
+  "end": 31.069
+ },
+ {
+  "text": "FDE",
+  "start": 31.069,
+  "end": 31.52
+ },
+ {
+  "text": "if",
+  "start": 31.52,
+  "end": 31.639
+ },
+ {
+  "text": "this",
+  "start": 31.639,
+  "end": 31.819
+ },
+ {
+  "text": "is",
+  "start": 31.819,
+  "end": 31.939
+ },
+ {
+  "text": "new",
+  "start": 31.939,
+  "end": 32.119
+ },
+ {
+  "text": "to",
+  "start": 32.119,
+  "end": 32.239
+ },
+ {
+  "text": "you",
+  "start": 32.239,
+  "end": 32.389
+ },
+ {
+  "text": "and",
+  "start": 32.389,
+  "end": 32.539
+ },
+ {
+  "text": "follow",
+  "start": 32.539,
+  "end": 32.869
+ },
+ {
+  "text": "us",
+  "start": 32.869,
+  "end": 32.989
+ },
+ {
+  "text": "for",
+  "start": 32.989,
+  "end": 33.169
+ },
+ {
+  "text": "more",
+  "start": 33.169,
+  "end": 33.409
+ },
+ {
+  "text": "amazing",
+  "start": 33.409,
+  "end": 33.799
+ },
+ {
+  "text": "AI",
+  "start": 33.799,
+  "end": 34.029
+ },
+ {
+  "text": "stuff.",
+  "start": 34.039,
+  "end": 34.549
+ }
+]
