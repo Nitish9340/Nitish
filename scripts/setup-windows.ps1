@@ -2,15 +2,15 @@
 # repo, then starts Claude Code with the reel-style editing task.
 #
 # Run in PowerShell:
-#   irm https://raw.githubusercontent.com/Nitish9340/Nitish/claude/hyperframes-video-setup-ipg9kg/scripts/setup-windows.ps1 | iex
+#   irm https://raw.githubusercontent.com/Nitish9340/Nitish/claude/amazing-faraday-osar4k/scripts/setup-windows.ps1 | iex
 # (or download this file and run:  powershell -ExecutionPolicy Bypass -File setup-windows.ps1)
 
 $ErrorActionPreference = 'Stop'
 
 $RepoUrl = 'https://github.com/Nitish9340/Nitish.git'
-$Branch  = 'claude/hyperframes-video-setup-ipg9kg'
+$Branch  = 'claude/amazing-faraday-osar4k'
 $RepoDir = 'D:\Nitish'
-$RawDir  = 'D:\Build Fast With AI Files\October\5_10_26\286_5_10_26_FDE_Video\Assets\1. Videos\1. Raw Videos'
+$DefaultRaw = 'D:\Build Fast With AI Files\October\5_10_26\286_5_10_26_FDE_Video\Assets\1. Videos\1. Raw Videos'
 
 function Refresh-Path {
   $env:Path = [Environment]::GetEnvironmentVariable('Path', 'Machine') + ';' +
@@ -74,15 +74,17 @@ if ($reel) {
 }
 if (-not (Test-Path $ReelPath)) { throw "Reference reel not found: $ReelPath" }
 
-if (-not (Test-Path $RawDir)) {
-  $RawDir = (Read-Host "  Raw video folder not found. Full path to it").Trim('"')
-  if (-not (Test-Path $RawDir)) { throw "Raw video folder not found: $RawDir" }
-}
-$raws = Get-ChildItem $RawDir -File | Where-Object { $_.Extension -match '^\.(mp4|mov|mkv|m4v|avi)$' }
-Write-Host "  raw clips: $($raws.Count) in $RawDir"
+# A folder of clips or a single video file. Paste it as-is from Explorer's "Copy as path".
+Write-Host "  Raw footage: a folder of clips or a single video file."
+$entered = (Read-Host "  Path [Enter = $DefaultRaw]").Trim().Trim('"')
+$RawPath = if ($entered) { $entered } else { $DefaultRaw }
+if (-not (Test-Path -LiteralPath $RawPath)) { throw "Raw footage not found: $RawPath" }
+$raws = @(Get-ChildItem -LiteralPath $RawPath -File | Where-Object { $_.Extension -match '^\.(mp4|mov|mkv|m4v|avi)$' })
+if ($raws.Count -eq 0) { throw "No .mp4/.mov/.mkv/.m4v/.avi video at: $RawPath" }
+Write-Host "  raw clips: $($raws.Count) at $RawPath"
 $raws | ForEach-Object { Write-Host "    - $($_.Name)" }
 
 Write-Host "`n[5/5] Starting Claude Code ..." -ForegroundColor Cyan
 # Single line, no double quotes: Windows PowerShell 5.1 mangles embedded quotes in native-command arguments.
-$prompt = "Using /hyperframes: decode the editing style of the reference reel at '$ReelPath' - cuts, pacing, captions, motion graphics, transitions, music and sound effects - and write the breakdown down first. Then edit my raw footage in '$RawDir' in the same style and with the same energy, as a 9:16 Reel. Keep my content original, but make the editing, motion and sound feel equally engaging and professional. Render the final MP4 and tell me where it is."
+$prompt = "Using /hyperframes: decode the editing style of the reference reel at '$ReelPath' - cuts, pacing, captions, motion graphics, transitions, music and sound effects - and write the breakdown down first. Then edit my raw footage at '$RawPath' in the same style and with the same energy, as a 9:16 Reel. Keep my content original, but make the editing, motion and sound feel equally engaging and professional. Render the final MP4 and tell me where it is."
 claude $prompt

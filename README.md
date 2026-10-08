@@ -30,7 +30,7 @@ Claude will create a project under `videos/<name>/`, preview it, and render an M
 **Windows, one command** (installs Git, Node, FFmpeg, Claude Code, clones this repo, starts the edit):
 
 ```powershell
-irm https://raw.githubusercontent.com/Nitish9340/Nitish/claude/hyperframes-video-setup-ipg9kg/scripts/setup-windows.ps1 | iex
+irm https://raw.githubusercontent.com/Nitish9340/Nitish/claude/amazing-faraday-osar4k/scripts/setup-windows.ps1 | iex
 ```
 
 Manual setup:
